@@ -1,11 +1,11 @@
 import "./App.css";
-import Banner from "./components/Banner";
 import "bootstrap/dist/css/bootstrap.min.css";
+import Home from "./pages/Home";
 
 function App() {
   return (
     <>
-      <Banner />
+      <Home />
     </>
   );
 }

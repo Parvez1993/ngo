@@ -18,13 +18,13 @@ body {
   background: #fff;
 }
 
-.swiper-slide img {
+.swiper-slide > img {
   display: block;
   width: 100%;
   height: 90vh;
   object-fit: cover;
 }
-img {
+.swiper-slide > img {
   animation: scale 40s linear infinite;
 }
 

@@ -31,17 +31,30 @@ function Appbar() {
                 placement="end"
               >
                 <Offcanvas.Header closeButton>
-                  <Offcanvas.Title id={`offcanvasNavbarLabel-expand-${expand}`}>
-                    Offcanvas
+                  <Offcanvas.Title
+                    id={`offcanvasNavbarLabel-expand-${expand}`}
+                    className="text-white"
+                  >
+                    Menu
                   </Offcanvas.Title>
                 </Offcanvas.Header>
                 <Offcanvas.Body>
-                  <Nav className="justify-content-end flex-grow-1 pe-3">
-                    <Nav.Link href="#action1">Home</Nav.Link>
-                    <Nav.Link href="#action2">About</Nav.Link>
-                    <Nav.Link href="#action2">Misison</Nav.Link>
-                    <Nav.Link href="#action2">Project</Nav.Link>
-                    <Nav.Link href="#action2">Contact us</Nav.Link>
+                  <Nav className="justify-content-end flex-grow-1 pe-3 offcanvas_menu">
+                    <Nav.Link href="#action1" className="nav__item">
+                      Home
+                    </Nav.Link>
+                    <Nav.Link href="#action2" className="nav__item">
+                      About
+                    </Nav.Link>
+                    <Nav.Link href="#action3" className="nav__item">
+                      Misison
+                    </Nav.Link>
+                    <Nav.Link href="#action4" className="nav__item">
+                      Project
+                    </Nav.Link>
+                    <Nav.Link href="#action5" className="nav__item">
+                      Contact
+                    </Nav.Link>
                   </Nav>
                 </Offcanvas.Body>
               </Navbar.Offcanvas>

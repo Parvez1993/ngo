@@ -1,0 +1,28 @@
+.mission {
+  padding: 50px 0;
+  display: flex;
+}
+
+.mission__text {
+  color: #727475;
+}
+
+.mission__text h1 {
+  font-size: 50px;
+}
+
+.mission__text h3 {
+  font-size: 24px;
+}
+
+.card_container {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  width: 100%;
+}
+
+.misison__card__img {
+  height: 250px !important;
+  object-fit: cover;
+}
