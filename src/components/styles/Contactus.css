@@ -1,0 +1,79 @@
+.parallax1 {
+  /* The image used */
+  background-image: url("../../data/Images/parallex.jpg");
+  /* Full height */
+  height: 100%;
+
+  /* Create the parallax scrolling effect */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.parallex1_container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.para_text1 {
+  text-align: left;
+  font-size: 24px;
+  word-spacing: 2px;
+  line-height: 1.5em;
+  padding: 20px 0;
+  font-weight: 400;
+  width: 80%;
+}
+
+.email {
+  font-size: 20px;
+  border-radius: 20px !important;
+  width: 300px;
+  padding: 10px 0;
+}
+
+.btn_email {
+  background: #05c7b0d4;
+  font-size: 20px;
+  border-radius: 20px;
+  width: 150px;
+  font-weight: 400;
+  margin: 0px 10px;
+  padding: 10px 0;
+}
+
+.button-grow-on-hover {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+}
+.button-grow-on-hover:hover,
+.button-grow-on-hover:focus,
+.button-grow-on-hover:active {
+  -webkit-animation-name: pulse-grow-on-hover;
+  animation-name: pulse-grow-on-hover;
+  -webkit-animation-duration: 0.3s;
+  animation-duration: 0.3s;
+  -webkit-animation-timing-function: linear;
+  animation-timing-function: linear;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+  -webkit-animation-direction: alternate;
+  animation-direction: alternate;
+  color: rgb(243, 242, 242);
+}
+
+@media screen and (max-width: 991.9px) {
+  .para_text1 {
+    width: 100%;
+  }
+  .parallex1_container {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+  }
+}

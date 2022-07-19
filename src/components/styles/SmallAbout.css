@@ -1,0 +1,26 @@
+.parallax {
+  /* The image used */
+  background-image: url("../../data/Images/parallex.jpg");
+  /* Full height */
+  height: 300px;
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.parallex__text {
+  text-align: center;
+  font-size: 2.3em;
+  word-spacing: 2px;
+  font-weight: 700;
+  line-height: 1.4em;
+}
+
+@media screen and (max-width: 571.9px) {
+  .parallex__text {
+    font-size: 1.3em;
+  }
+}
