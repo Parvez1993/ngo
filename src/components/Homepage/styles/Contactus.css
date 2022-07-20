@@ -1,6 +1,6 @@
 .parallax1 {
   /* The image used */
-  background-image: url("../../data/Images/parallex.jpg");
+  background-image: url("../../../data/Images/parallex.jpg");
   /* Full height */
   height: 100%;
 
@@ -30,7 +30,12 @@
   font-size: 20px;
   border-radius: 20px !important;
   width: 300px;
-  padding: 10px 0;
+  padding: 10px 10px;
+  color: rgba(0, 0, 0, 0.583);
+}
+
+.email:focus {
+  outline: none;
 }
 
 .btn_email {

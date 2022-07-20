@@ -1,0 +1,69 @@
+.banner {
+  position: relative;
+}
+
+.appbar {
+  position: absolute;
+  margin-left: auto;
+  margin-right: auto;
+  top: 20px;
+  left: 0;
+  right: 0;
+  text-align: center;
+}
+
+.nav__item {
+  font-size: 16px;
+  color: white;
+  font-weight: 600;
+}
+
+.nav__item:hover {
+  color: grey;
+}
+.offcanvas .show {
+  letter-spacing: 5px;
+  margin: 10px 0;
+}
+
+@media screen and (max-width: 572px) {
+  .offcanvas {
+    background: rgba(3, 3, 3, 0.968) !important;
+  }
+}
+
+/* =================================================== */
+/* page banner styles */
+
+.page_banner {
+  background-image: url("../../../data/Images/parallex.jpg");
+  /* Full height */
+  height: 40vh;
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.page_banner_title {
+  font-size: 5.2em;
+  font-weight: 700;
+}
+
+.fade-in-text {
+  animation: fadeIn 5s;
+}
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}

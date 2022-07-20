@@ -1,9 +1,9 @@
 import React from "react";
 import "./styles/Mission.css";
 
-import miss1 from "../data/Images/misison/miss1.jpg";
-import miss2 from "../data/Images/misison/miss2.jpg";
-import miss3 from "../data/Images/misison/miss3.jpg";
+import miss1 from "../../data/Images/misison/miss1.jpg";
+import miss2 from "../../data/Images/misison/miss2.jpg";
+import miss3 from "../../data/Images/misison/miss3.jpg";
 import { Col, Container, Row } from "react-bootstrap";
 
 function Mission() {

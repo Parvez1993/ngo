@@ -1,0 +1,35 @@
+.module {
+  width: 100%;
+  height: 300px;
+  background-size: cover;
+  position: relative;
+  overflow: hidden;
+}
+.module > header {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 20px 10px;
+}
+.module > header > h1 {
+  margin: 0;
+  color: white;
+  text-shadow: 0 1px 0 black;
+}
+
+.desc {
+  margin-top: 20px;
+  text-align: left;
+  font-size: 1.2em;
+  color: rgba(34, 3, 3, 0.613);
+}
+
+.aboutText {
+  font-size: 2.2em;
+  text-align: right;
+  padding: 0 30px;
+  line-height: 55px;
+  color: rgba(14, 2, 2, 0.676);
+  font-weight: 600;
+}
