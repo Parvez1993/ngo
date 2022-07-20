@@ -29,7 +29,7 @@ function Banner({ show, title }) {
         >
           {carousalData.map((i, k) => {
             return (
-              <SwiperSlide>
+              <SwiperSlide key={k}>
                 <img src={i.img} alt="bannerImg" className="full zoom" />
               </SwiperSlide>
             );

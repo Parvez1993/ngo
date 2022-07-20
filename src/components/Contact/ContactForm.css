@@ -1,0 +1,15 @@
+.custom_input {
+  background: rgba(132, 135, 131, 0.383);
+}
+
+.custom_input:focus {
+  -webkit-appearance: none;
+  border-color: rgb(54, 62, 62) !important;
+  box-shadow: none !important;
+}
+
+.custom_alert {
+  background-color: rgba(1, 48, 29, 0.845);
+  color: white;
+  font-size: 1.6em;
+}

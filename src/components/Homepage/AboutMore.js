@@ -40,18 +40,20 @@ function AboutMore() {
             {missionData.map((i, k) => {
               return (
                 // eslint-disable-next-line jsx-a11y/img-redundant-alt
-                <Col lg={4} md={12} sm={12}>
+                <Col lg={4} md={12} sm={12} key={k}>
                   <div className="card shadow-sm my-3">
                     <img
-                      class="card-img-top misison__card__img"
+                      className="card-img-top misison__card__img"
                       src={i.img}
                       rel="nofollow"
                       alt="Card image cap"
                     />
-                    <div class="card-body">
-                      <p class="card_text text-left title mt-3">{i.title}</p>
+                    <div className="card-body">
+                      <p className="card_text text-left title mt-3">
+                        {i.title}
+                      </p>
                       <p className="para py-3">{i.para}</p>
-                      <div class="container py-3 text-center">
+                      <div className="container py-3 text-center">
                         <a
                           href="#"
                           className={`link_pulse link_pulse_color_${k} link-four pulse-grow-on-hover`}

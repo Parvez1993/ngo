@@ -13,8 +13,6 @@ function Home() {
       <Mission />
       <SmallAbout />
       <AboutMore />
-      <Contactus />
-      <Footer />
     </>
   );
 }

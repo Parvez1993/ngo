@@ -2,7 +2,6 @@ import React from "react";
 import { Col, Container, Row } from "react-bootstrap";
 import AboutCared from "../components/About/AboutCared";
 import Banner from "../components/Homepage/Banner";
-import Contactus from "../components/Homepage/Contactus";
 import user1 from "../data/user1.jpg";
 function About() {
   let data = [
@@ -14,7 +13,7 @@ function About() {
     {
       id: 2,
       title: "Siya Gupta",
-      desc: "MMy name is Siya Gupta. As a teenager receiving an education, I get to pursue my hobbies, which include playing tennis and sketching, and also learn about things that interest me. As a result I’m fortunate enough to receive opportunities that girls around the world may not. Education gives everyone the power and tools to improve their lives. I’m grateful for my education opportunities and want to make sure that other girls can also get the same ones.",
+      desc: "My name is Siya Gupta. As a teenager receiving an education, I get to pursue my hobbies, which include playing tennis and sketching, and also learn about things that interest me. As a result I’m fortunate enough to receive opportunities that girls around the world may not. Education gives everyone the power and tools to improve their lives. I’m grateful for my education opportunities and want to make sure that other girls can also get the same ones.",
     },
   ];
 
@@ -29,16 +28,13 @@ function About() {
           </Col>
           {data.map((i, k) => {
             return (
-              <>
-                <Col lg={4} key={k} className="py-3">
-                  <AboutCared title={i.title} desc={i.desc} image={user1} />
-                </Col>
-              </>
+              <Col lg={4} key={k} className="py-3">
+                <AboutCared title={i.title} desc={i.desc} image={user1} />
+              </Col>
             );
           })}
         </Row>
       </Container>
-      <Contactus />
     </>
   );
 }
