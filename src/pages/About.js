@@ -1,9 +1,32 @@
-import React from "react";
+import React, { useEffect, useRef } from "react";
 import { Col, Container, Row } from "react-bootstrap";
 import AboutCared from "../components/About/AboutCared";
 import Banner from "../components/Homepage/Banner";
 import user1 from "../data/user1.jpg";
+import Typed from "typed.js";
 function About() {
+  // Create Ref element.
+  const el = useRef(null);
+  useEffect(() => {
+    const typed = new Typed(el.current, {
+      strings: [
+        `Samsara Foundation was created to help girls in India get the
+      resources they need to educate themselves and improve their lives.`,
+      ], // Strings to display
+      // Speed settings, try diffrent values untill you get good results
+      startDelay: 40,
+      typeSpeed: 80,
+      backSpeed: 10,
+      fadeOutClass: "typed-fade-out",
+      loop: true,
+      showCursor: true,
+    });
+
+    // Destropying
+    return () => {
+      typed.destroy();
+    };
+  }, []);
   let data = [
     {
       id: 1,
@@ -23,8 +46,7 @@ function About() {
       <Container className="py-5 my-3">
         <Row>
           <Col className="aboutText my-3" lg={4}>
-            Samsara Foundation was created to help girls in India get the
-            resources they need to educate themselves and improve their lives.
+            <span ref={el}></span>
           </Col>
           {data.map((i, k) => {
             return (

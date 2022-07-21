@@ -1,12 +1,16 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "./styles/Mission.css";
-
+import AOS from "aos";
 import miss1 from "../../data/Images/misison/miss1.jpg";
 import miss2 from "../../data/Images/misison/miss2.jpg";
 import miss3 from "../../data/Images/misison/miss3.jpg";
 import { Col, Container, Row } from "react-bootstrap";
 
 function Mission() {
+  useEffect(() => {
+    AOS.init();
+  }, []);
+
   const missionData = [
     {
       img: miss1,
@@ -37,9 +41,13 @@ function Mission() {
               return (
                 // eslint-disable-next-line jsx-a11y/img-redundant-alt
                 <Col lg={4} md={12} sm={12} key={k}>
-                  <div className="card shadow-sm my-5">
+                  <div
+                    className="card shadow-sm my-5"
+                    data-aos="zoom-out-up"
+                    data-aos-duration="4000"
+                  >
                     <img
-                      className="card-img-top misison__card__img"
+                      className="card-img-top misison__card__img hover14"
                       src={i.img}
                       rel="nofollow"
                       alt="Card"
@@ -51,7 +59,7 @@ function Mission() {
 
                       <div className="container py-3 text-center">
                         <a
-                          href="#"
+                          href="/"
                           className={`link_pulse link_pulse_color_${k} link-four pulse-grow-on-hover`}
                         >
                           Contact us

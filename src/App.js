@@ -10,6 +10,7 @@ import Project from "./pages/Project";
 import Footer from "./components/Homepage/Footer";
 import Contact from "./pages/Contact";
 
+import "aos/dist/aos.css"; // You can also use <link> for styles
 function App() {
   return (
     <>

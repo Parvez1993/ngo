@@ -1,12 +1,17 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "./styles/Mission.css";
-
+import { motion } from "framer-motion";
 import miss1 from "../../data/Images/more/miss1.jpg";
 import miss2 from "../../data/Images/more/miss2.jpg";
 import miss3 from "../../data/Images/more/miss3.jpg";
 import { Col, Container, Row } from "react-bootstrap";
+import Aos from "aos";
 
 function AboutMore() {
+  useEffect(() => {
+    Aos.init();
+  }, []);
+
   const missionData = [
     {
       img: miss1,
@@ -36,30 +41,36 @@ function AboutMore() {
         </div>
         <div className="card_container py-5">
           <Row>
-            {" "}
             {missionData.map((i, k) => {
               return (
                 // eslint-disable-next-line jsx-a11y/img-redundant-alt
+
                 <Col lg={4} md={12} sm={12} key={k}>
-                  <div className="card shadow-sm my-3">
-                    <img
-                      className="card-img-top misison__card__img"
-                      src={i.img}
-                      rel="nofollow"
-                      alt="Card image cap"
-                    />
-                    <div className="card-body">
-                      <p className="card_text text-left title mt-3">
-                        {i.title}
-                      </p>
-                      <p className="para py-3">{i.para}</p>
-                      <div className="container py-3 text-center">
-                        <a
-                          href="#"
-                          className={`link_pulse link_pulse_color_${k} link-four pulse-grow-on-hover`}
-                        >
-                          Read More
-                        </a>
+                  <div data-aos="zoom-in" data-aos-duration="4000">
+                    <div
+                      className="card shadow-sm my-3"
+                      style={{ overflow: "hidden" }}
+                    >
+                      <img
+                        className="card-img-top misison__card__img"
+                        src={i.img}
+                        rel="nofollow"
+                        alt="Card"
+                        style={{ overflow: "hidden" }}
+                      />
+                      <div className="card-body">
+                        <p className="card_text text-left title mt-3">
+                          {i.title}
+                        </p>
+                        <p className="para py-3">{i.para}</p>
+                        <div className="container py-3 text-center">
+                          <a
+                            href="/"
+                            className={`link_pulse link_pulse_color_${k} link-four pulse-grow-on-hover`}
+                          >
+                            Read More
+                          </a>
+                        </div>
                       </div>
                     </div>
                   </div>
