@@ -29,7 +29,7 @@ function Mission() {
   return (
     <Container>
       {" "}
-      <div className="mission">
+      <div className="mission" style={{ overflowX: "hidden" }}>
         <div className="mission__text">
           <h3>SUPPORT</h3>
           <h1>OUR MISSION</h1>
@@ -43,7 +43,7 @@ function Mission() {
                 <Col lg={4} md={12} sm={12} key={k}>
                   <div
                     className="card shadow-sm my-5"
-                    data-aos="zoom-out-up"
+                    data-aos="flip-up"
                     data-aos-duration="4000"
                   >
                     <img

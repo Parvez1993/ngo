@@ -29,7 +29,7 @@
 .email {
   font-size: 20px;
   border-radius: 20px !important;
-  width: 300px;
+  max-width: 300px;
   padding: 10px 10px;
   color: rgba(0, 0, 0, 0.583);
 }
@@ -69,10 +69,6 @@
   -webkit-animation-direction: alternate;
   animation-direction: alternate;
   color: rgb(243, 242, 242);
-}
-
-.custom_form {
-  padding: 0px 30px;
 }
 
 @media screen and (max-width: 991.9px) {

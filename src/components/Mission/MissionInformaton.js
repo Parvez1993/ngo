@@ -8,7 +8,7 @@ function MissionInformaton() {
     Aos.init();
   }, []);
   return (
-    <Container className="my-5">
+    <Container className="my-5" style={{ overflowX: "hidden" }}>
       <Row>
         <Col lg={6}>
           <div
