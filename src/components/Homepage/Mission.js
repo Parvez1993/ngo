@@ -41,11 +41,7 @@ function Mission() {
               return (
                 // eslint-disable-next-line jsx-a11y/img-redundant-alt
                 <Col lg={4} md={12} sm={12} key={k}>
-                  <div
-                    className="card shadow-sm my-5"
-                    data-aos="flip-up"
-                    data-aos-duration="4000"
-                  >
+                  <div className="card shadow-sm my-5" data-aos="flip-up">
                     <img
                       className="card-img-top misison__card__img hover14"
                       src={i.img}
