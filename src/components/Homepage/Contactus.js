@@ -49,14 +49,14 @@ function Contactus() {
               <p className="para_text1">
                 Samsara Foundation was created to help girls in India get the
                 resources they need to educate themselves and improve their
-                lives
+                lives.
               </p>
             </div>
 
-            <form ref={form} onSubmit={sendEmail}>
-              <div className="d-flex align-items-center">
+            <form ref={form} onSubmit={sendEmail} className="custom_form">
+              <div className="d-flex flex-column align-items-center flex-lg-row">
                 <div>
-                  <h5 className="text-start">Email</h5>
+                  <h5 className="text-center">Email</h5>
                   <input
                     type="email"
                     className="email"

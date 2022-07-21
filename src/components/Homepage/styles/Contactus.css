@@ -71,6 +71,10 @@
   color: rgb(243, 242, 242);
 }
 
+.custom_form {
+  padding: 0px 30px;
+}
+
 @media screen and (max-width: 991.9px) {
   .para_text1 {
     width: 100%;
