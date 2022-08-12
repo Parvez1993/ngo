@@ -17,7 +17,9 @@ function Appbar() {
             sticky="top"
           >
             <Container fluid>
-              <Navbar.Brand href="/">Ngo</Navbar.Brand>
+              <Navbar.Brand href="/" className="fw-bold fs-4">
+                Aiding Burmese Children{" "}
+              </Navbar.Brand>
               <Navbar.Toggle
                 aria-controls={`offcanvasNavbar-expand-${expand}`}
               />
@@ -36,19 +38,34 @@ function Appbar() {
                 </Offcanvas.Header>
                 <Offcanvas.Body>
                   <Nav className="justify-content-end flex-grow-1 pe-3 offcanvas_menu">
-                    <Nav.Link href="/" className="nav__item">
+                    <Nav.Link
+                      href="/"
+                      className="nav__item text-dark custom_hover"
+                    >
                       Home
                     </Nav.Link>
-                    <Nav.Link href="/about" className="nav__item">
+                    <Nav.Link
+                      href="/about"
+                      className="nav__item text-dark custom_hover"
+                    >
                       About
                     </Nav.Link>
-                    <Nav.Link href="/mission" className="nav__item">
+                    <Nav.Link
+                      href="/mission"
+                      className="nav__item text-dark custom_hover"
+                    >
                       Misison
                     </Nav.Link>
-                    <Nav.Link href="/project" className="nav__item">
+                    <Nav.Link
+                      href="/project"
+                      className="nav__item text-dark custom_hover"
+                    >
                       Project
                     </Nav.Link>
-                    <Nav.Link href="/contact" className="nav__item">
+                    <Nav.Link
+                      href="/contact"
+                      className="nav__item text-dark custom_hover"
+                    >
                       Contact
                     </Nav.Link>
                   </Nav>

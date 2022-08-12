@@ -7,7 +7,7 @@ import "swiper/css/navigation";
 import "swiper/css/pagination";
 import "swiper/css/effect-fade";
 import "swiper/css/autoplay";
-import Appbar from "./Appbar";
+
 import { carousalData } from "../../data/carousal";
 // import required modules
 import { Autoplay, EffectFade, Navigation, Pagination } from "swiper";

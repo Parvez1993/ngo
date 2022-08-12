@@ -16,10 +16,13 @@
   font-size: 1.4em;
   color: white;
   font-weight: 600;
+  box-shadow: inset 0 0 0 0 #ffffff;
+  transition: color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
 }
 
 .nav__item:hover {
-  color: grey;
+  box-shadow: inset 100px 0 0 0 #565c5e;
+  color: white !important;
 }
 .offcanvas .show {
   letter-spacing: 5px;
