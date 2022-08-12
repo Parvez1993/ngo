@@ -26,10 +26,11 @@
 }
 
 .aboutText {
-  font-size: 2.2em;
-  text-align: right;
+  font-size: 2em;
+  text-align: left;
   padding: 0 30px;
   line-height: 55px;
   color: rgba(14, 2, 2, 0.676);
   font-weight: 600;
+  line-height: 80px;
 }

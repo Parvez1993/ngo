@@ -12,7 +12,6 @@ function Home() {
       <Banner show={true} />
       <Mission />
       <SmallAbout />
-      <AboutMore />
     </>
   );
 }

@@ -5,8 +5,8 @@ function SmallAbout() {
     <div className="parallax">
       <div className="d-flex justify-content-center align-items-center h-100">
         <h2 className="parallex__text w-75">
-          Samsara Foundation was created to help girls in India get the
-          resources they need to educate themselves and improve their lives.
+          ABC foundation was created to help kids in Myanmar(Burma) to provide
+          resources that helps their learning.
         </h2>
       </div>
     </div>
