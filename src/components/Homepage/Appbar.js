@@ -18,7 +18,7 @@ function Appbar() {
           >
             <Container fluid>
               <Navbar.Brand href="/" className="fw-bold fs-4">
-                Aiding Burmese Children{" "}
+                ABC
               </Navbar.Brand>
               <Navbar.Toggle
                 aria-controls={`offcanvasNavbar-expand-${expand}`}

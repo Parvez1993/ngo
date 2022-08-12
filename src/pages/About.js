@@ -2,6 +2,7 @@ import React, { useEffect, useRef } from "react";
 import { Col, Container, Row } from "react-bootstrap";
 import Banner from "../components/Homepage/Banner";
 import Typed from "typed.js";
+import { Helmet } from "react-helmet";
 function About() {
   // Create Ref element.
   const el = useRef(null);
@@ -28,6 +29,9 @@ function About() {
 
   return (
     <>
+      <Helmet>
+        <title>About</title>
+      </Helmet>
       <Banner show={false} title="About" />
       <Container className="py-5 my-4">
         <Row style={{ minHeight: "50vh" }}>

@@ -1,7 +1,6 @@
 import React from "react";
-import AboutMore from "../components/Homepage/AboutMore";
+import { Helmet } from "react-helmet";
 import Banner from "../components/Homepage/Banner";
-import Contactus from "../components/Homepage/Contactus";
 import Footer from "../components/Homepage/Footer";
 import Mission from "../components/Homepage/Mission";
 import SmallAbout from "../components/Homepage/SmallAbout";
@@ -9,6 +8,9 @@ import SmallAbout from "../components/Homepage/SmallAbout";
 function Home() {
   return (
     <>
+      <Helmet>
+        <title>Home</title>
+      </Helmet>
       <Banner show={true} />
       <Mission />
       <SmallAbout />
